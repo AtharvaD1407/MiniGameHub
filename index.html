@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini-Game-Hub</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Mini-Game-Hub</h1>
+            
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Search for a game..." onkeyup="searchGame()">
+                <button onclick="searchGame()">🔍</button>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact-footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="games">
+        <button id="left-arrow" class="arrow">&#9665;</button> <!-- Left Arrow -->
+        <div class="cards-container">
+            <div class="cards">
+                <div class="game-card">
+                    <img src="Images/hangman.png" alt="Hangman Game">
+                    <h3>Hangman</h3>
+                    <p>Test your word-guessing skills with this classic game.</p>
+                    <button>Play Now</button>
+                </div>
+
+                <div class="game-card">
+                    <img src="Images/guessTheNumber.jpg" alt="Guess the Number">
+                    <h3>Guess the Number</h3>
+                    <p>Can you guess the number? Test your luck!</p>
+                    <button>Play Now</button>
+                </div>
+
+                <div class="game-card">
+                    <img src="Images/guessTheWord.png" alt="Guess the Word">
+                    <h3>Guess the Word</h3>
+                    <p>Guess the hidden word and challenge yourself.</p>
+                    <button>Play Now</button>
+                </div>
+
+                <div class="game-card">
+                    <img src="Images/triviaQuiz.gif" alt="Trivia Quiz">
+                    <h3>Trivia Quiz</h3>
+                    <p>Answer trivia questions and challenge your knowledge.</p>
+                    <button>Play Now</button>
+                </div>
+
+                <div class="game-card">
+                    <img src="Images/triviaQuiz.gif" alt="Trivia Quiz">
+                    <h3>Trivia Quiz</h3>
+                    <p>Answer trivia questions and challenge your knowledge.</p>
+                    <button>Play Now</button>
+                </div>
+
+            <!-- Add more games if needed -->
+            </div>
+        </div>
+        <button id="right-arrow" class="arrow">&#9655;</button> <!-- Right Arrow -->
+    </section>
+
+
+    <footer id="contact-footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Me</h3>
+                <p>If you have any questions or feedback, feel free to reach out to us!</p>
+                <p>Email: <a href="mailto:codingATHU69@gmail.com">codingATHU69@gmail.com</a></p> 
+            </div>
+            <div class="social-media">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/AtharvaD1407" class="social-icon">
+                        <img src="Images/github_logo.png" alt="Github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/atharva-dhemare/" class="social-icon">
+                        <img src="Images/linkedin.webp" alt="LinkedIn">
+                    </a>
+                    <a href="https://medium.com/@Atharva_Dhemare" class="social-icon">
+                        <img src="Images/medium.jpg" alt="Medium">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MiniGameHub | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

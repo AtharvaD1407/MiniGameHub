@@ -1,0 +1,344 @@
+body{
+    background-color: #F5F5F5;
+    color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #333333; 
+    color: white;
+    padding: 15px 30px;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto; 
+}
+
+#searchBar {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    outline: none;
+    margin-left: 830px;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+    align-items: center;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: lightgray; 
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+section {
+    padding: 50px;
+    height: 470px;
+}
+
+#games {
+    margin-top: 60px;
+    background-color: #FFFFFF;
+    color: #333333;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
+    position: relative;
+}
+
+.cards-container {
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: scroll; 
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    scroll-behavior: smooth;
+    padding-left: 20px;
+    
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    margin-left: 0px;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    padding-left: 10px;
+}
+
+.game-card {
+    background-color: #676464;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    width: 260px;
+    height: 350px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    flex: 0 0 auto; 
+    overflow: hidden;
+    min-width: 250px; 
+    max-width: 250px;
+}
+
+.game-card img {
+    width: 100%;
+    height: 140px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.game-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.game-card p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    padding: 0 10px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.game-card button {
+    background-color: #FFD700;
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90%;
+}
+
+.game-card:hover {
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#left-arrow {
+    position: absolute;
+    left: 5px; 
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+    opacity: 1; 
+    pointer-events: auto; 
+    margin-left: 50px;
+}
+
+
+#right-arrow {
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-right: 50px;
+}
+
+.arrow:hover {
+    background-color: #FF6347;
+    color: #FFF;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    .cards-container {
+        width: 90%;
+    }
+    .game-card {
+        width: 220px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards-container {
+        width: 100%;
+    }
+    .game-card {
+        width: 180px;
+        height: 310px;
+    }
+    .arrow {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+}
+
+#contact-footer {
+    background-color: #333333; 
+    color: #FFFFFF; 
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contact-info, .social-media {
+    width: 45%;
+    min-width: 280px;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    color: #FFD700; 
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #FFFFFF; 
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #FFD700; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF6347; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 40px; 
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    background-color: #222222; 
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #CCCCCC; 
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info, .social-media {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
