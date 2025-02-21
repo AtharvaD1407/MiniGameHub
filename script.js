@@ -1,22 +1,21 @@
 function searchGame() {
   let query = document.getElementById("searchBar").value.trim().toLowerCase();
   let games = document.querySelectorAll(".game-card");
-  let noResultMessage = document.getElementById("no-result");
 
-  let found = false;
+  let hasMatch = false;
 
   games.forEach((game) => {
-    let title = game.querySelector("h2").innerText.toLowerCase();
+    let title = game.querySelector("h3").innerText.toLowerCase();
     if (title.includes(query)) {
-      game.style.display = "flex"; 
-      found = true;
+      game.style.display = "";
+      hasMatch = true;
     } else {
       game.style.display = "none";
     }
   });
 
-  if (noResultMessage) {
-    noResultMessage.style.display = found ? "none" : "block";
+  if (!hasMatch) {
+    games.forEach((game) => (game.style.display = ""));
   }
 }
 
