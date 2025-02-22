@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.game-container {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(50, 50, 50, 0.5);
+  width: 380px;
+  border: 1px solid #2b2b2b;
+}
+
+h1 {
+  color: #cccccc;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#guess-input {
+  font-size: 18px;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  border: 2px solid #444;
+  border-radius: 6px;
+  outline: none;
+  background: #222;
+  color: #dcdcdc;
+  transition: 0.3s;
+}
+
+#guess-input:focus {
+  border-color: #0ef;
+  box-shadow: 0 0 5px #0ef;
+}
+
+button {
+  background: #333;
+  border: 1px solid #444;
+  color: #ddd;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #444;
+  box-shadow: 0 0 10px rgba(100, 100, 100, 0.3);
+}
+
+.reset-btn {
+  background: #660000;
+  border: 1px solid #880000;
+}
+
+.reset-btn:hover {
+  background: #880000;
+  box-shadow: 0 0 10px rgba(150, 0, 0, 0.5);
+}
+
+#message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
