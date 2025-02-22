@@ -38,12 +38,12 @@ A collection of fun and interactive mini-games built with **HTML, CSS, and JavaS
 
 Here’s a quick look at the games available in **Mini-Game-Hub**:
 
-| 🕹 Game                                         | 🎯 Description                                                          | ▶ Play Now   |
-| ---------------------------------------------- | ----------------------------------------------------------------------- | ------------ |
-| ![Hangman](Images/hangman.png)                 | **Hangman** - Test your word-guessing skills with this classic game.    | [🔗 Play](#) |
-| ![Guess the Number](Images/guessTheNumber.jpg) | **Guess the Number** - Can you guess the right number? Test your luck!  | [🔗 Play](#) |
-| ![Guess the Word](Images/guessTheWord.png)     | **Guess the Word** - Find the hidden word and challenge yourself.       | [🔗 Play](#) |
-| ![Trivia Quiz](Images/triviaQuiz.gif)          | **Trivia Quiz** - Answer trivia questions and challenge your knowledge. | [🔗 Play](#) |
+| 🕹 Game                                            | 🎯 Description                                                          | ▶ Play Now   |
+| ------------------------------------------------- | ----------------------------------------------------------------------- | ------------ |
+| <img src="Images/hangman.png" width="100">        | **Hangman** - Test your word-guessing skills with this classic game.    | [🔗 Play](#) |
+| <img src="Images/guessTheNumber.jpg" width="100"> | **Guess the Number** - Can you guess the right number? Test your luck!  | [🔗 Play](#) |
+| <img src="Images/guessTheWord.png" width="100">   | **Guess the Word** - Find the hidden word and challenge yourself.       | [🔗 Play](#) |
+| <img src="Images/triviaQuiz.gif" width="100">     | **Trivia Quiz** - Answer trivia questions and challenge your knowledge. | [🔗 Play](#) |
 
 ---
 
