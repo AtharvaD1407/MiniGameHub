@@ -1,0 +1,127 @@
+/* General Styling */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Game Container */
+.game-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: inline-block; /* ✅ Makes container adjust to content */
+  min-width: 320px;
+  max-width: 100%;
+}
+
+/* Title */
+h1 {
+  color: #4a90e2;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Instructions */
+.instructions {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Word Container - Adjusts Size Based on Word Length */
+#word-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 15px auto;
+  padding: 5px;
+  width: auto; /* ✅ Adjust width dynamically */
+  max-width: 100%;
+}
+
+/* Input Fields */
+input {
+  width: 35px;
+  height: 45px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+/* Pre-filled Letters */
+input.filled {
+  background-color: #d3e0ff;
+  font-weight: bold;
+  border: none;
+}
+
+/* Correct Letter */
+input.correct {
+  background-color: #c8e6c9;
+  border: 2px solid #388e3c;
+}
+
+/* Wrong Letter */
+input.wrong {
+  background-color: #ffcdd2;
+  border: 2px solid #d32f2f;
+}
+
+/* Buttons */
+button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+/* Result Message */
+#result-message {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Play Again Button */
+.play-again {
+  display: none;
+  background-color: #e24a4a;
+  margin: 10px auto;
+  display: block;
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.play-again:hover {
+  background-color: #b71c1c;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 480px) {
+  input {
+    width: 30px;
+    height: 40px;
+    font-size: 18px;
+  }
+}

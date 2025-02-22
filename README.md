@@ -6,7 +6,7 @@ A collection of fun and interactive mini-games built with **HTML, CSS, and JavaS
 
 ## 🚀 **Live Demo**
 
-🔗 [Click Here to Play Mini-Game-Hub](#) _(Replace with your hosted URL if available)_
+🔗 [Click Here to Play Mini-Game-Hub](#)
 
 ---
 
