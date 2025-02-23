@@ -6,8 +6,9 @@ function searchGame() {
 
   games.forEach((game) => {
     let title = game.querySelector("h3").innerText.toLowerCase();
-    if (title.includes(query)) {
-      game.style.display = "";
+
+    if (query === "" || title.startsWith(query)) {
+      game.style.display = "block";
       hasMatch = true;
     } else {
       game.style.display = "none";
@@ -15,7 +16,7 @@ function searchGame() {
   });
 
   if (!hasMatch) {
-    games.forEach((game) => (game.style.display = ""));
+    games.forEach((game) => (game.style.display = "block"));
   }
 }
 
