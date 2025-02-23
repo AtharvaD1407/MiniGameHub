@@ -1,0 +1,71 @@
+body {
+  background-color: wheat;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 5px solid black;
+  height: 500px;
+  width: 500px;
+  background-color: rgb(228, 242, 157);
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  height: 70px;
+  width: 130px;
+  margin: 15px;
+}
+
+#heading {
+  margin-top: 35px;
+}
+
+#red {
+  background-color: red;
+  margin-top: 50px;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#green {
+  background-color: green;
+}
+
+#red:hover {
+  background-color: rgb(235, 92, 92);
+  height: 80px;
+  width: 140px;
+}
+
+#blue:hover {
+  background-color: lightblue;
+  height: 80px;
+  width: 140px;
+}
+
+#green:hover {
+  background-color: lightgreen;
+  height: 80px;
+  width: 140px;
+}
+
+#reset {
+  color: white;
+  background-color: black;
+}
+
+#reset:hover {
+  background-color: rgb(40, 39, 39);
+  height: 80px;
+  width: 140px;
+}
