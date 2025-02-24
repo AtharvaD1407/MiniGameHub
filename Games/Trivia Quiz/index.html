@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Trivia Quiz Game</title>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Trivia Quiz 🎯</h1>
+
+      <!-- Category Selection -->
+      <div id="category-selection">
+        <h2>Select Category</h2>
+        <div class="category-buttons">
+          <button onclick="startQuiz('general')">General Knowledge</button>
+          <button onclick="startQuiz('movies')">Movies</button>
+          <button onclick="startQuiz('sports')">Sports</button>
+          <button onclick="startQuiz('history')">History</button>
+          <button onclick="startQuiz('science')">Science</button>
+        </div>
+      </div>
+
+      <!-- Quiz Section -->
+      <div id="quiz" class="hidden">
+        <div class="progress-bar">
+          <div id="progress"></div>
+        </div>
+
+        <h2 id="question"></h2>
+        <div id="timer">⏳ <span id="time">10</span>s</div>
+
+        <div id="options"></div>
+
+        <!-- Lifelines -->
+        <div class="lifelines">
+          <button onclick="useLifeline('fiftyFifty')">🃏 50-50</button>
+          <button onclick="useLifeline('extraTime')">⏰ Extra Time</button>
+          <button onclick="useLifeline('skip')">🔄 Skip</button>
+        </div>
+
+        <button id="next-btn" onclick="nextQuestion()" class="hidden">
+          Next
+        </button>
+        <p id="score-display"></p>
+      </div>
+
+      <!-- Leaderboard -->
+      <div id="leaderboard" class="hidden">
+        <h2>🏆 Leaderboard</h2>
+        <ol id="leaderboard-list"></ol>
+        <button onclick="restartQuiz()">Play Again</button>
+      </div>
+    </div>
+
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

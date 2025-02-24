@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1a1a2e;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-container {
+  width: 80%;
+  max-width: 500px;
+  margin: 50px auto;
+  background: #16213e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: #f39c12;
+}
+
+button {
+  background: #f39c12;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #e67e22;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background: #444;
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#progress {
+  height: 100%;
+  background: #f39c12;
+  transition: width 0.5s ease;
+}
+
+/* Timer */
+#timer {
+  font-size: 18px;
+  color: #f39c12;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Answer buttons */
+#options button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.correct {
+  background: #2ecc71 !important;
+}
+
+.wrong {
+  background: #e74c3c !important;
+}
+
+/* Lifelines */
+.lifelines button {
+  background: #6a0572;
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.lifelines button:hover {
+  background: #8a2be2;
+}
+
+/* Leaderboard */
+#leaderboard ol {
+  list-style: none;
+  padding: 0;
+}
+
+#leaderboard li {
+  background: #333;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
