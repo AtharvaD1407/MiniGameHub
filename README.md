@@ -55,5 +55,5 @@ Follow these steps to run the project on your local machine:
 1️⃣ Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/Mini-Game-Hub.git
+git clone https://github.com/AtharvaD1407/MiniGameHub.git
 ```
