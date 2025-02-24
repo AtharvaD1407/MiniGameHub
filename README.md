@@ -45,6 +45,8 @@ Here’s a quick look at the games available in **Mini-Game-Hub**:
 | <img src="Images/guessTheWord.png" width="100">           | **Guess the Word** - Find the hidden word and challenge yourself.       | [🔗 Play](https://atharvad1407.github.io/MiniGameHub/Games/Guess%20the%20Word/index.html)           |
 | <img src="Images/rockPaperScissor.jpg" width="100">       | **Rock Paper Scissors** - Play against the computer and test your luck! | [🔗 Play](https://atharvad1407.github.io/MiniGameHub/Games/Rock%20Paper%20Scissor/index.html)       |
 | <img src="Images/backgroundColorChanger.jpg" width="100"> | **Background Color Changer** - Click to cycle through three colors!     | [🔗 Play](https://atharvad1407.github.io/MiniGameHub/Games/Background%20Color%20Changer/index.html) |
+| <img src="Images/triviaQuiz.gif" width="100">             | **Trivia Quiz** - Test your knowledge with fun trivia questions!        | [🔗 Play](https://atharvad1407.github.io/MiniGameHub/Games/Trivia%20Quiz/index.html)                |
+| <img src="Images/memoryGame.jpg" width="100">             | **Memory Match** - Flip the cards and match pairs to win!               | [🔗 Play](https://atharvad1407.github.io/MiniGameHub/Games/Memory%20Match/index.html)               |
 
 ---
 
