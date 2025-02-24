@@ -191,57 +191,6 @@ section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.arrow {
-  background-color: #ffd700;
-  color: #333;
-  border: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-#left-arrow {
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background-color: #ffd700;
-  color: #333;
-  border: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background 0.3s ease, transform 0.2s ease;
-  opacity: 1;
-  pointer-events: auto;
-  margin-left: 50px;
-}
-
-#right-arrow {
-  position: absolute;
-  right: 10px;
-  z-index: 10;
-  background-color: #ffd700;
-  color: #333;
-  border: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background 0.3s ease, transform 0.2s ease;
-  margin-right: 50px;
-}
-
-.arrow:hover {
-  background-color: #ff6347;
-  color: #fff;
-  transform: scale(1.1);
-}
-
 @media (max-width: 1024px) {
   .cards-container {
     width: 90%;
@@ -259,10 +208,6 @@ section {
   .game-card {
     width: 180px;
     height: 310px;
-  }
-  .arrow {
-    font-size: 1.5rem;
-    padding: 8px;
   }
 }
 

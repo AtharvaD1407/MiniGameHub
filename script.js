@@ -22,22 +22,6 @@ function searchGame() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const cardsContainer = document.querySelector(".cards-container");
-  const leftArrow = document.getElementById("left-arrow");
-  const rightArrow = document.getElementById("right-arrow");
-
-  let scrollAmount = 300;
-
-  rightArrow.addEventListener("click", function () {
-    cardsContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
-  });
-
-  leftArrow.addEventListener("click", function () {
-    cardsContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const cardsContainer = document.querySelector(".cards-container");
   const cards = document.querySelector(".cards");
 
   // Clone the cards for infinite scrolling
