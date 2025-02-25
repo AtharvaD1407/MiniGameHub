@@ -23,32 +23,6 @@ body {
   z-index: 1000;
 }
 
-.search-container {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
-
-#searchBar {
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-  width: 200px;
-  outline: none;
-  margin-left: 830px;
-}
-
-.search-container button {
-  padding: 8px 12px;
-  margin-left: 5px;
-  background-color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  height: 30px;
-  align-items: center;
-}
-
 .navbar .nav-links {
   list-style-type: none;
   display: flex;
@@ -67,7 +41,7 @@ body {
 }
 
 .navbar .nav-links li a:hover {
-  background-color: lightgray;
+  text-decoration: underline;
   transform: scale(1.1);
   border-radius: 5px;
 }
@@ -144,7 +118,8 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: inline-block;
   flex: 0 0 auto;
-  overflow: hidden;
+  overflow: visible;
+  white-space: normal;
   min-width: 250px;
   max-width: 250px;
 }
