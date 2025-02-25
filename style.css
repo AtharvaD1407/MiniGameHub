@@ -9,6 +9,18 @@ body {
   box-sizing: border-box;
 }
 
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: url("Images/title.jpg") no-repeat center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 .navbar {
   position: fixed;
   top: 0;
