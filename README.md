@@ -47,6 +47,7 @@ Here’s a quick look at the games available in **Mini-Game-Hub**:
 | <img src="Images/backgroundColorChanger.jpg" width="100"> | **Background Color Changer** - Click to cycle through three colors!     | [🔗 Play](https://atharvad1407.github.io/MiniGameHub/Games/Background%20Color%20Changer/index.html) |
 | <img src="Images/triviaQuiz.gif" width="100">             | **Trivia Quiz** - Test your knowledge with fun trivia questions!        | [🔗 Play](https://atharvad1407.github.io/MiniGameHub/Games/Trivia%20Quiz/index.html)                |
 | <img src="Images/memoryGame.jpg" width="100">             | **Memory Match** - Flip the cards and match pairs to win!               | [🔗 Play](https://atharvad1407.github.io/MiniGameHub/Games/Memory%20Match/index.html)               |
+| <img src="Images/blockJump.png" width="100">              | **Block Jump** - Jump over obstacles and test your reflexes!            | [🔗 Play](https://atharvad1407.github.io/MiniGameHub/Games/Block%20Jump%20Game/index.html)          |
 
 ---
 
