@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.game-container {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  background-color: white;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+#dino {
+  position: absolute;
+  width: 25px;
+  height: 35px;
+  background-color: green;
+  bottom: 50px;
+  left: 50px;
+}
+
+#ground {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: brown;
+  bottom: 0;
+}
+
+.obstacle {
+  position: absolute;
+  width: 25px;
+  height: 35px;
+  background-color: red;
+  bottom: 50px;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#game-over {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  width: 500px;
+}
